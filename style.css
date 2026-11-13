@@ -5,18 +5,14 @@
 }
 
 :root {
-  --color-darkpink: #800021;       
-  --color-primary: #C24366;    
-  --color-bg-light: #FFF8F6;   
-  --color-surface: #FFFFFF;  
+  --color-darkpink: #AB004C;       
+  --color-primary: #C24366;      
   --font-title: 'Montserrat', sans-serif;
   --font-body: Helvetica, Arial, sans-serif;
 }
 
 body {
   font-family: var(--font-body);
-
-  color: #2C2C2E;
   line-height: 1.6;
   padding: 1.25rem;
 }
@@ -44,7 +40,7 @@ body {
 
 .hero-title .highlight {
   color: var(--color-primary);
-  background: linear-gradient(120deg, rgba(255, 105, 180, 0.15) 0%);
+  background: linear-gradient(120deg, rgba(246, 102, 174, 0.15) 0%);
   padding: 0 4px;
 }
 
@@ -57,7 +53,7 @@ body {
 .hero-card {
   margin-top: 45px;
   margin-bottom: 70px;
-  background-color: #f5e7ee; 
+  background-color: #FCF0F5; 
   border-radius: 15px;
   padding: 1.75rem;
   box-shadow: 5px 7px 12px -4px rgba(0,0,0,0.69);
@@ -121,7 +117,7 @@ body {
   justify-content: center;
   gap: 0.75rem;
   width: 100%;
-  background-color: var(--color-primary);
+  background-color: var(--color-darkpink);
   color: #FFFFFF;
   text-decoration: none;
   font-family: var(--font-body); 
@@ -138,6 +134,51 @@ body {
   box-shadow: 0 4px 10px rgba(194, 67, 102, 0.2);
 }
 
-/*Nav bar*/
+/* Partie concernant la nav bar en bas */ 
+
+body {
+  padding-bottom: 6.5rem;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  margin: 0 auto;   
+  
+  background-color: #fcfcfc;
+  border: 3px solid #b9b8b8;
+  border-radius: 20px;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #4a4949;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+
+.nav-item svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+.nav-item.active {
+  color: var(--color-darkpink);
+}
+
 
 
